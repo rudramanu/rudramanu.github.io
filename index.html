@@ -4,9 +4,272 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Portfolio</title>
   </head>
   <body>
-    <h1>here is my portfolio</h1>
+    <!-- //===============navbar section================================== -->
+    <div id="nav-menu">
+      <div><h2>Rudra</h2></div>
+      <div>
+        <ul>
+          <li><a href="#home" class="nav-link home">Home</a></li>
+          <li><a href="#about" class="nav-link about">About</a></li>
+          <li><a href="#skills" class="nav-link skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link projects">Projects</a></li>
+          <li><a href="#contact" class="nav-link contact">Contact</a></li>
+          <li>
+            <a
+              href="https://drive.google.com/file/d/1-oj-xMFTdGJLW3igB5dMVMm9BwlU_XM8/view?usp=share_link"
+              class="nav-link resume"
+              id="resume-button-1"
+              target="_blank"
+              >Resume</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- //================home section===================================== -->
+    <section id="home">
+      <div>
+        <div id="user-detail-name">
+          <h2>Hi there,</h2>
+          <br />
+          <h2>I am Rudra Manu</h2>
+          <br />
+        </div>
+        <div id="user-detail-intro">
+          <h1 style="font-size: xx-large">
+            Full Stack <span style="color: teal">Web Developer</span>
+          </h1>
+        </div>
+      </div>
+      <div>
+        <img src="./images/IMG-20230207-WA0006.jpg" class="home-img" />
+        <a
+          href="https://drive.google.com/file/d/1-oj-xMFTdGJLW3igB5dMVMm9BwlU_XM8/view"
+          download
+          id="resume-button-2"
+          style="text-decoration: none"
+          target="_blank"
+          >Download Resume<i class="fas fa-arrow-circle-down"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- //================about section==================================== -->
+
+    <section id="about" class="about section">
+      <h2 class="heading">
+        <i class="fas fa-user-alt"></i> About <span>Me</span>
+      </h2>
+      <div>
+        <div>
+          <div id="user-detail-name">
+            <h1>I'm Rudra Manu</h1>
+            <br />
+          </div>
+          <div id="user-detail-intro">
+            <h2 style="font-size: xx-large">Full Stack Web Developer</h2>
+            <br />
+            <h3 style="text-align: justify">
+              Ambitious, creative, confident, and committed character, seeking
+              to pursue career in Full Stack Web Development with a dynamic
+              organisation. Looking forward to expanding knowledge and earning
+              work experience.
+            </h3>
+            <div class="socials">
+              <ul class="social-icons">
+                <li>
+                  <a
+                    class="linkedin"
+                    aria-label="LinkedIn"
+                    href="https://www.linkedin.com/in/rudramanu/"
+                    target="_blank"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    class="github"
+                    aria-label="GitHub"
+                    href="https://github.com/rudramanu"
+                    target="_blank"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+
+                <li>
+                  <a
+                    class="instagram"
+                    aria-label="Instagram"
+                    href="https://www.instagram.com/rudramanuofficial/"
+                    target="_blank"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <h3>Mob:+91-7355295410</h3>
+            <h3>Email:merudramanu@gmail.com</h3>
+          </div>
+        </div>
+        <div>
+          <img src="./images/IMG_20221024_194025_602.jpg" class="about-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- //===================skill section================================= -->
+    <section id="skills">
+      <h1 style="font-size: xx-large">Skills</h1>
+      <div>
+        <div class="skills-card">
+          <img src="./images/html.jpeg" class="skills-card-img" />
+          <div class="skills-card-name">HTML</div>
+        </div>
+        <div class="skills-card">
+          <img
+            style="object-fit: contain"
+            src="./images/css.png"
+            class="skills-card-img"
+          />
+          <div class="skills-card-name">CSS</div>
+        </div>
+        <div class="skills-card">
+          <img src="./images/js.jpeg" class="skills-card-img" />
+          <div class="skills-card-name">JavaScript</div>
+        </div>
+        <div class="skills-card">
+          <img src="./images/Git-Icon-1788C.png" class="skills-card-img" />
+          <div class="skills-card-name">Git</div>
+        </div>
+        <div class="skills-card">
+          <img src="./images/netlify.jpeg" class="skills-card-img" />
+          <div class="skills-card-name">Netlify</div>
+        </div>
+        <div class="skills-card">
+          <img src="./images/node.jpeg" class="skills-card-img" />
+          <div class="skills-card-name">NodeJS</div>
+        </div>
+        <div class="skills-card">
+          <img src="./images/postman-icon.webp" class="skills-card-img" />
+          <div class="skills-card-name">Postman</div>
+        </div>
+        <div class="skills-card">
+          <img src="./images/github.jpeg" class="skills-card-img" />
+          <div class="skills-card-name">Github</div>
+        </div>
+        <div class="skills-card">
+          <img src="./images/mongo.jpeg" class="skills-card-img" />
+          <div class="skills-card-name">MongoDB</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- //=================project section================================ -->
+    <section id="projects">
+      <h1 style="font-size: xx-large; margin-top: 65px">Projects</h1>
+      <div id="projectdiv">
+        <div class="project-card">
+          <img src="./images/byte_front.PNG" />
+          <div class="project-title">Apple Website Clone</div>
+          <div class="project-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+            iusto molestiae neque, itaque quaerat dolore suscipit sunt optio
+            repudiandae dicta, hic blanditiis illum culpa possimus, corrupti
+            similique architecto reprehenderit nam.
+          </div>
+          <div class="project-tech-stack">
+            HTML | CSS | JavaScript | MongoDB | NodeJS
+          </div>
+          <a href="" class="project-github-link"
+            ><img src="./images/githublogo.png" alt=""
+          /></a>
+          <a href="" class="project-deployed-link"
+            ><img src="./images/netlify.jpeg" alt=""
+          /></a>
+        </div>
+        <div class="project-card">
+          <img src="./images/tata1mg.PNG" />
+          <div class="project-title">Tata 1Mg Clone</div>
+          <div class="project-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+            iusto molestiae neque, itaque quaerat dolore suscipit sunt optio
+            repudiandae dicta, hic blanditiis illum culpa possimus, corrupti
+            similique architecto reprehenderit nam.
+          </div>
+          <div class="project-tech-stack">HTML | CSS | JavaScript</div>
+          <a href="" class="project-github-link"
+            ><img src="./images/githublogo.png" alt=""
+          /></a>
+          <a href="" class="project-deployed-link"
+            ><img src="./images/netlify.jpeg" alt=""
+          /></a>
+        </div>
+        <div class="project-card">
+          <img src="./images/meanbuyfront.PNG" />
+          <div class="project-title">MeanBuy.com Clone</div>
+          <div class="project-description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus
+            iusto molestiae neque, itaque quaerat dolore suscipit sunt optio
+            repudiandae dicta, hic blanditiis illum culpa possimus, corrupti
+            similique architecto reprehenderit nam.
+          </div>
+          <div class="project-tech-stack">HTML | CSS | JavaScript</div>
+          <a href="" class="project-github-link"
+            ><img src="./images/githublogo.png" alt=""
+          /></a>
+          <a href="" class="project-deployed-link"
+            ><img src="./images/netlify.jpeg" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- //====================contact section=============================== -->
+    <section id="contact">
+      <h1 style="font-size: xx-large; margin-top: 65px">Contact Me</h1>
+      <div id="contactdiv">
+        <div>
+          <div>
+            <a href="" id="contact-github"
+              ><img class="contact_logo" src="./images/github.jpeg" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="" id="contact-linkedin"
+              ><img class="contact_logo" src="./images/linkedin.webp" alt=""
+            /></a>
+          </div>
+          <div>
+            <a href="" id="contact-instagram"
+              ><img class="contact_logo" src="./images/instalogo.webp" alt=""
+            /></a>
+          </div>
+
+          <div id="contact-phone">
+            <img class="contact_logo" src="./images/call.png" alt="" />
+            <h3>+91-7355295410</h3>
+          </div>
+          <div id="contact-email">
+            <img class="contact_logo" src="./images/mail.jpeg" alt="" />
+            <h3>merudramanu@gmail.com</h3>
+          </div>
+        </div>
+        <div>
+          <img src="" alt="" />
+        </div>
+      </div>
+    </section>
   </body>
 </html>

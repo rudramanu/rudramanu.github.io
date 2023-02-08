@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Luckiest Guy", cursive;
+}
+#nav-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  background-color: teal;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+}
+#nav-menu > div:nth-child(1) > h2 {
+  color: white;
+  font-size: xx-large;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+ul li {
+  margin: 0 10px;
+}
+ul a {
+  text-decoration: none;
+  color: white;
+  /* border: 1px solid black; */
+  padding: 10px 20px;
+}
+ul a:hover {
+  background-color: white;
+  border-radius: 15px;
+  color: teal;
+}
+section {
+  padding: 50px;
+  text-align: center;
+  border: 2px solid red;
+}
+#home {
+  padding-top: 145px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 520px;
+}
+#home > div:nth-child(1) {
+  /* border: 1px solid green; */
+}
+#home > div:nth-child(2) {
+  /* border: 1px solid yellow; */
+}
+#about {
+  background-color: white;
+}
+#about > div {
+  /* background-color: #ddd; */
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 511px;
+  width: 77%;
+  margin: auto;
+}
+#about > div > div {
+  /* border: 1px solid blue; */
+}
+#about > div > div:nth-child(1) {
+  padding-right: 150px;
+}
+#skills {
+  background-color: white;
+}
+
+#projects {
+  background-color: white;
+}
+
+#contact {
+  background-color: white;
+}
+.home-img {
+  border-radius: 50%;
+  height: 200px;
+  margin: 0 auto;
+  width: 200px;
+}
+.about-img {
+  border-radius: 50%;
+  height: 300px;
+  margin: auto;
+  width: 300px;
+  /* border: 1px solid blue; */
+}
+#user-detail-name,
+#user-detail-intro {
+  font-size: large;
+  text-align: left;
+}
+#resume-button-2 {
+  /* border: 1px solid red; */
+  padding: 10px;
+  border-radius: 15px;
+  background-color: teal;
+  color: white;
+}
+.socials {
+  position: relative;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+.socials .social-icons {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.socials .social-icons li {
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.social-icons a {
+  font-size: 2rem;
+  display: inline-block;
+  line-height: 44px;
+  color: #00d9ff;
+  background-color: #09011b;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+  color: #fff;
+  background-color: #0685da;
+}
+.social-icons a.github:hover {
+  background-color: #0e0e0e;
+}
+/* //=================== */
+#skills > div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 45%;
+  margin: auto;
+}
+#skills {
+  height: 615px;
+}
+.skills-card img {
+  background-color: white;
+  width: 115px;
+  height: 115px;
+  object-fit: cover;
+  border-radius: 30px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#skills > h1 {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+.heading {
+  /* border: 1px solid red; */
+  padding-top: 70px;
+}
+
+#projectdiv {
+  row-gap: 20px;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  /* border: 2px solid green; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-card img {
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+}
+.project-card {
+  /* border: 1px solid blue; */
+
+  /* margin-bottom: 10px; */
+  border-radius: 7px;
+  padding: 10px;
+  margin: auto;
+  height: 390px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.project-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.project-description {
+  width: 400px;
+}
+#contact > h1 {
+  /* border: 2px solid blue; */
+  margin-bottom: 20px;
+}
+#contactdiv {
+  border: 2px solid green;
+
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#contactdiv > div {
+  text-align: left;
+  width: 40%;
+  height: 500px;
+  border: 2px solid black;
+}
+.project-github-link img,
+.project-deployed-link img {
+  /* border: 1px solid blue; */
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.project-github-link img:hover,
+.project-deployed-link img:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.project-title {
+  font-size: x-large;
+  font-weight: bold;
+}
+.project-tech-stack {
+  font-weight: bold;
+}
+.project-description {
+  width: 500px;
+  /* border: 1px solid red; */
+}
+.contact_logo {
+  width: 50px;
+  height: 50px;
+}
+#contact-phone,
+#contact-email {
+  display: flex;
+  align-items: center;
+}
