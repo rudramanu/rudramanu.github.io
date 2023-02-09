@@ -110,43 +110,14 @@ section {
   background-color: teal;
   color: white;
 }
-.socials {
-  position: relative;
-  margin-top: 10px;
-  margin-left: -10px;
+#socialslink {
+  /* border: 1px solid red; */
+  display: flex;
+  margin-left: -6px;
 }
-.socials .social-icons {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-.socials .social-icons li {
-  display: inline-block;
-  margin-bottom: 14px;
-}
-.social-icons a {
-  font-size: 2rem;
-  display: inline-block;
-  line-height: 44px;
-  color: #00d9ff;
-  background-color: #09011b;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  margin-right: 8px;
-  border-radius: 100%;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
-.social-icons a:active,
-.social-icons a:focus,
-.social-icons a:hover {
-  color: #fff;
-  background-color: #0685da;
-}
-.social-icons a.github:hover {
-  background-color: #0e0e0e;
+.social_logo {
+  width: 50px;
+  height: 50px;
 }
 /* //=================== */
 #skills > div {
@@ -186,7 +157,20 @@ section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-
+.react-activity-calendar {
+  border: 2px solid teal;
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+}
+.streaks {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 .project-card img {
   width: 500px;
   height: 200px;

@@ -12,6 +12,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/IonicaBizau/github-calendar/gh-pages/dist/github-calendar.css"
+    />
     <title>Portfolio</title>
   </head>
   <body>
@@ -87,37 +92,19 @@
               organisation. Looking forward to expanding knowledge and earning
               work experience.
             </h3>
-            <div class="socials">
-              <ul class="social-icons">
-                <li>
-                  <a
-                    class="linkedin"
-                    aria-label="LinkedIn"
-                    href="https://www.linkedin.com/in/rudramanu/"
-                    target="_blank"
-                    ><i class="fab fa-linkedin"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    class="github"
-                    aria-label="GitHub"
-                    href="https://github.com/rudramanu"
-                    target="_blank"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </li>
-
-                <li>
-                  <a
-                    class="instagram"
-                    aria-label="Instagram"
-                    href="https://www.instagram.com/rudramanuofficial/"
-                    target="_blank"
-                    ><i class="fab fa-instagram"></i
-                  ></a>
-                </li>
-              </ul>
+            <div id="socialslink">
+              <div>
+                <a href="https://github.com/rudramanu" id="social-github"
+                  ><img class="social_logo" src="./images/github.jpeg" alt=""
+                /></a>
+              </div>
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/rudramanu/"
+                  id="social-linkedin"
+                  ><img class="social_logo" src="./images/linkedin.webp" alt=""
+                /></a>
+              </div>
             </div>
             <h3>Mob:+91-7355295410</h3>
             <h3>Email:merudramanu@gmail.com</h3>
@@ -234,6 +221,27 @@
           /></a>
         </div>
       </div>
+      <!-- <div id="gitstats"></div> -->
+      <div class="react-activity-calendar">Loading the data just for you.</div>
+      <div class="streaks">
+        <div class="github-streaks-stats">
+          <a href="https://git.io/streak-stats"
+            ><img src="https://streak-stats.demolab.com?user=rudramanu"
+          /></a>
+        </div>
+        <div id="github-top-langs">
+          <a href="https://git.io/streak-stats"
+            ><img
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=rudramanu&layout=compact"
+          /></a>
+        </div>
+        <div id="github-stats-card">
+          <a href="https://git.io/streak-stats"
+            ><img
+              src="https://github-readme-stats.vercel.app/api?username=rudramanu&show_icons=true&theme=transparent"
+          /></a>
+        </div>
+      </div>
     </section>
 
     <!-- //====================contact section=============================== -->
@@ -271,5 +279,8 @@
         </div>
       </div>
     </section>
+    <script>
+      GitHubCalendar(".react-activity-calendar", "rudramanu");
+    </script>
   </body>
 </html>
