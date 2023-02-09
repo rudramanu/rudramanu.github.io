@@ -39,7 +39,7 @@ ul a:hover {
 section {
   padding: 50px;
   text-align: center;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 #home {
   padding-top: 145px;
@@ -49,12 +49,7 @@ section {
   align-items: center;
   height: 520px;
 }
-#home > div:nth-child(1) {
-  /* border: 1px solid green; */
-}
-#home > div:nth-child(2) {
-  /* border: 1px solid yellow; */
-}
+
 #about {
   background-color: white;
 }
@@ -68,9 +63,7 @@ section {
   width: 77%;
   margin: auto;
 }
-#about > div > div {
-  /* border: 1px solid blue; */
-}
+
 #about > div > div:nth-child(1) {
   padding-right: 150px;
 }
