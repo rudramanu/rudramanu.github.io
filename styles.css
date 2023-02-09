@@ -199,17 +199,24 @@ section {
   margin-bottom: 20px;
 }
 #contactdiv {
-  border: 2px solid green;
-
+  /* border: 2px solid green; */
+  height: 500px;
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: auto;
 }
-#contactdiv > div {
+#contactdiv > div:nth-child(1) {
   text-align: left;
   width: 40%;
-  height: 500px;
-  border: 2px solid black;
+  /* height: 500px; */
+  /* border: 2px solid black; */
+}
+#contactdiv > div:nth-child(2) {
+  text-align: right;
+  width: 40%;
+  /* height: 500px; */
+  /* border: 2px solid black; */
 }
 .project-github-link img,
 .project-deployed-link img {
@@ -236,11 +243,19 @@ section {
   /* border: 1px solid red; */
 }
 .contact_logo {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 #contact-phone,
 #contact-email {
   display: flex;
   align-items: center;
+}
+#whatsapplog {
+  width: 400px;
+  cursor: pointer;
+}
+#contactdiv h3 {
+  /* border: 1px solid red; */
+  font-size: x-large;
 }
