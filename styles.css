@@ -3,6 +3,9 @@
   padding: 0;
   font-family: "Luckiest Guy", cursive;
 }
+body {
+  width: fit-content;
+}
 
 #nav-menu {
   display: flex;
@@ -15,6 +18,7 @@
   top: 0;
   overflow: hidden;
 }
+
 #nav-menu > div:nth-child(1) > h2 {
   color: white;
   font-size: xx-large;
@@ -37,7 +41,11 @@ ul a:hover {
   border-radius: 15px;
   color: teal;
 }
-section {
+#home,
+#about,
+#skills,
+#projects,
+#contact {
   padding: 50px;
   text-align: center;
   /* border: 2px solid red; */
@@ -252,4 +260,102 @@ section {
 #contactdiv h3 {
   /* border: 1px solid red; */
   font-size: x-large;
+}
+@media all and (min-width: 250px) and (max-width: 580px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  #nav-menu {
+    display: grid;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-color: teal;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+  }
+  #nav-menu a {
+    font-size: x-large;
+  }
+  #home {
+    display: grid;
+  }
+  #home > div:nth-child(1) div {
+    font-size: x-large;
+    /* border: 1px solid red; */
+    text-align: center;
+  }
+  #home > div:nth-child(2) {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #about > div {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    /* border: 1px solid green; */
+  }
+  #about > div > div:nth-child(1) {
+    padding-right: 0px;
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
+    width: 72%;
+    padding: 10px;
+  }
+  #about > div > div:nth-child(1) div {
+    text-align: center;
+  }
+  #about > div > div:nth-child(2) {
+    /* border: 2px solid red; */
+  }
+  #user-detail-intro h3 {
+    /* border: 1px solid blue; */
+    font-size: xx-large;
+  }
+  #projectdiv {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .streaks {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+  }
+  .react-activity-calendar {
+    border: 1px solid rgb(3, 3, 3);
+    width: 100%;
+    margin: auto;
+  }
+  #contact {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid blue; */
+  }
+  #contactdiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #contactdiv > div {
+    margin-top: 20px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+  }
+  #contactdiv h3 {
+    font-size: large;
+  }
 }
