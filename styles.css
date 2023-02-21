@@ -6,7 +6,9 @@
 body {
   width: fit-content;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 #nav-menu {
   display: flex;
   justify-content: space-around;
