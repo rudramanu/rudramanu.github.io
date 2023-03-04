@@ -2,362 +2,360 @@
   margin: 0;
   padding: 0;
   font-family: "Luckiest Guy", cursive;
-}
-body {
-  width: fit-content;
+  box-sizing: border-box;
 }
 html {
   scroll-behavior: smooth;
 }
+body {
+  /* background: black; */
+  color: rgb(0, 0, 0);
+}
+/* nav bar css start */
 #nav-menu {
-  display: flex;
-  justify-content: space-around;
   width: 100%;
-  height: 100px;
-  background-color: teal;
-  align-items: center;
+  height: auto;
+  padding: 30px 10%;
   position: fixed;
-  top: 0;
-  overflow: hidden;
+  background-color: teal;
 }
-
-#nav-menu > div:nth-child(1) > h2 {
-  color: white;
-  font-size: xx-large;
-}
-ul {
+nav {
   display: flex;
-  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-ul li {
-  margin: 0 10px;
+nav .fas {
+  display: none;
 }
-ul a {
+.logo {
+  font-size: 30px;
   text-decoration: none;
-  color: white;
-  /* border: 1px solid black; */
-  padding: 10px 20px;
 }
-ul a:hover {
-  background-color: white;
-  border-radius: 15px;
-  color: teal;
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
 }
-#home,
-#about,
-#skills,
-#projects,
-#contact {
-  padding: 50px;
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+}
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after {
+  width: 100%;
+}
+@media screen and (min-width: 320px) and (max-width: 650px) {
+  nav .fas {
+    display: block;
+    font-size: 22px;
+  }
+  nav ul {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    background-color: teal;
+    z-index: 2;
+  }
+  nav ul li {
+    display: block;
+    margin: 22px;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    cursor: pointer;
+  }
+}
+/* nav bar css end */
+
+/* home section css */
+#home {
+  align-items: center;
+  text-align: center;
+  padding-top: 100px;
+
+  height: 720px;
+  /* background-color: black; */
+  display: flex;
+  justify-content: space-evenly;
+}
+#detials {
+  /* padding-top: 150px; */
+}
+#detials h1 {
+  margin-bottom: 20px;
+}
+#detials > button {
+  margin-top: 10px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  /* border: 0px solid black; */
+  background-color: teal;
+  /* color: black; */
+  font-size: 22px;
+}
+#detials button:hover {
+  cursor: pointer;
+  background-color: black;
+  /* color: rgb(255, 204, 0); */
+  border: 2px solid teal;
+}
+#detials button a:hover {
+  color: rgb(255, 255, 255);
+}
+#home .home-img {
+  border-radius: 30%;
+  /* padding-bottom: 30px; */
+  /* border: 1px solid red; */
+  width: 300px;
+}
+/* media query */
+@media screen and (min-width: 320px) and (max-width: 650px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+  }
+  #pic {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+  }
+  #pic {
+    margin-top: 30px;
+  }
+}
+/* home section css end */
+
+/* about section css start */
+#about {
   text-align: center;
   /* border: 2px solid red; */
 }
-#home {
-  padding-top: 145px;
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 520px;
-}
-
-#about {
-  background-color: white;
-}
-#about > div {
-  /* background-color: #ddd; */
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 511px;
-  width: 77%;
-  margin: auto;
-}
-
-#about > div > div:nth-child(1) {
-  padding-right: 150px;
-}
-#skills {
-  background-color: white;
-}
-
-#projects {
-  background-color: white;
-}
-
-#contact {
-  background-color: white;
-}
-.home-img {
-  border-radius: 50%;
-  height: 200px;
-  margin: 0 auto;
-  width: 200px;
-}
-.about-img {
-  border-radius: 50%;
-  height: 300px;
-  margin: auto;
-  width: 300px;
+#about_details {
   /* border: 1px solid blue; */
-}
-#user-detail-name,
-#user-detail-intro {
-  font-size: large;
-  text-align: left;
-}
-#resume-button-2 {
-  /* border: 1px solid red; */
-  padding: 10px;
-  border-radius: 15px;
-  background-color: teal;
-  color: white;
-}
-#socialslink {
-  /* border: 1px solid red; */
-  display: flex;
-  margin-left: -6px;
-}
-.social_logo {
-  width: 50px;
-  height: 50px;
-}
-/* //=================== */
-#skills > div {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 45%;
-  margin: auto;
-}
-#skills {
-  height: 615px;
-}
-.skills-card img {
-  background-color: white;
-  width: 115px;
-  height: 115px;
-  object-fit: cover;
-  border-radius: 30px;
-  margin-top: 20px;
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
-
-#skills > h1 {
-  padding-top: 70px;
-  padding-bottom: 30px;
-}
-.heading {
-  /* border: 1px solid red; */
-  padding-top: 70px;
-}
-
-#projectdiv {
-  row-gap: 20px;
-  width: 80%;
-  margin: auto;
-  margin-top: 40px;
-  /* border: 2px solid green; */
+  margin-bottom: 135px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
-.react-activity-calendar {
-  border: 2px solid teal;
-  border-radius: 10px;
-  width: 80%;
-  margin: auto;
-  margin-top: 40px;
-  padding: 20px;
+#about_pic img {
+  width: 100%;
+  /* padding-left: 20px; */
+  /* padding-bottom: 30px; */
 }
-.streaks {
-  margin-top: 40px;
+#user-detail-intro {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  text-justify: inter-word;
+  padding: 0px 20px;
+  font-size: 22px;
 }
-.project-card img {
-  width: 500px;
-  height: 200px;
-  border: 1px solid black;
-}
-.project-card {
-  /* border: 1px solid blue; */
+/* about section css end */
 
-  /* margin-bottom: 10px; */
-  border-radius: 7px;
-  padding: 10px;
-  margin: auto;
-  height: 390px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+/* Skill section css start */
+#skills {
+  text-align: center;
 }
-.project-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-}
-.project-description {
-  width: 400px;
-}
-#contact > h1 {
-  /* border: 2px solid blue; */
-  margin-bottom: 20px;
-}
-#contactdiv {
-  /* border: 2px solid green; */
-  height: 500px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#all_skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   margin: auto;
 }
-#contactdiv > div:nth-child(1) {
-  text-align: left;
+.skills-card-img {
   width: 40%;
-  /* height: 500px; */
-  /* border: 2px solid black; */
 }
-#contactdiv > div:nth-child(2) {
-  text-align: right;
-  width: 40%;
-  /* height: 500px; */
-  /* border: 2px solid black; */
+.skills-card-name {
+  font-size: 22px;
 }
-.project-github-link img,
-.project-deployed-link img {
-  /* border: 1px solid blue; */
-  background-color: transparent;
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-}
-.project-github-link img:hover,
-.project-deployed-link img:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.project-title {
-  font-size: x-large;
-  font-weight: bold;
-}
-.project-tech-stack {
-  font-weight: bold;
-}
-.project-description {
-  width: 500px;
-  /* border: 1px solid red; */
-}
-.contact_logo {
-  width: 70px;
-  height: 70px;
-}
-#contact-phone,
-#contact-email {
-  display: flex;
-  align-items: center;
-}
-#whatsapplog {
-  width: 400px;
-  cursor: pointer;
-}
-#contactdiv h3 {
-  /* border: 1px solid red; */
-  font-size: x-large;
-}
-@media all and (min-width: 250px) and (max-width: 580px) {
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
-  #nav-menu {
-    display: grid;
-    justify-content: space-around;
-    text-align: center;
-    width: 100%;
-    height: 100px;
-    background-color: teal;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    overflow: hidden;
-  }
-  #nav-menu a {
-    font-size: x-large;
-  }
-  #home {
-    display: grid;
-  }
-  #home > div:nth-child(1) div {
-    font-size: x-large;
-    /* border: 1px solid red; */
-    text-align: center;
-  }
-  #home > div:nth-child(2) {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-  }
-  #about {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  #about > div {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    text-align: center;
-    /* border: 1px solid green; */
-  }
-  #about > div > div:nth-child(1) {
-    padding-right: 0px;
-    margin-bottom: 20px;
-    /* border: 2px solid red; */
-    width: 72%;
-    padding: 10px;
-  }
-  #about > div > div:nth-child(1) div {
-    text-align: center;
-  }
-  #about > div > div:nth-child(2) {
-    /* border: 2px solid red; */
-  }
-  #user-detail-intro h3 {
-    /* border: 1px solid blue; */
-    font-size: xx-large;
-  }
-  #projectdiv {
-    /* border: 1px solid red; */
-    display: grid;
+@media screen and (min-width: 320px) and (max-width: 650px) {
+  #all_skills {
     grid-template-columns: repeat(1, 1fr);
   }
-  .streaks {
-    /* border: 1px solid red; */
+  #about_details {
     display: flex;
     flex-direction: column;
   }
-  .react-activity-calendar {
-    border: 1px solid rgb(3, 3, 3);
-    width: 100%;
-    margin: auto;
+}
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  #all_skills {
+    grid-template-columns: repeat(2, 1fr);
   }
-  #contact {
+}
+/* Skill section end */
+
+/* Tool section start */
+#tools {
+  text-align: center;
+}
+#all_tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: auto;
+}
+.skills-card-img {
+  width: 40%;
+}
+.skills-card-name {
+  font-size: 22px;
+}
+@media screen and (min-width: 320px) and (max-width: 650px) {
+  #all_tools {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  #all_tools {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* tools section css end */
+
+/* project section css start */
+#projects {
+  text-align: center;
+  padding: 0px 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#main_project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: auto;
+}
+.project-card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px 20px;
+  border: 2px solid teal;
+}
+.all_links_project {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+.project-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.project-description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.project-tech-stack {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+.all_links_project {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+@media screen and (min-width: 320px) and (max-width: 650px) {
+  #main_project {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  #main_project {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* project section css end */
+
+/* contact section css start */
+#contact {
+  /* border: 2px solid blue; */
+  padding-bottom: 140px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#contact_inner {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#contact_inner a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+.c1 {
+  margin-bottom: 20px;
+  text-align: left;
+}
+#contact_inner i {
+  font-size: 40px;
+}
+@media screen and (min-width: 320px) and (max-width: 650px) {
+  #contact_inner {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid blue; */
   }
-  #contactdiv {
-    width: 100%;
+}
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  #contact_inner {
     display: flex;
     flex-direction: column;
   }
-  #contactdiv > div {
-    margin-top: 20px;
-    padding: 0px;
+}
+/* contact section css end */
+
+/* github calender css*/
+.react-activity-calendar {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+#All_github_details {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+@media screen and (min-width: 320px) and (max-width: 650px) {
+  #All_github_details {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid green; */
   }
-  #contactdiv h3 {
-    font-size: large;
+}
+@media screen and (min-width: 651px) and (max-width: 1024px) {
+  #All_github_details {
+    display: flex;
+    flex-direction: column;
   }
+}
+/* Github css end */
+
+/* //======================== */
+#whatsapplog {
+  width: 300px;
 }
