@@ -149,6 +149,8 @@ nav ul li a:hover::after {
 
 /* about section css start */
 #about {
+  width: 90%;
+  margin: auto;
   text-align: center;
   /* border: 2px solid red; */
 }
@@ -175,6 +177,8 @@ nav ul li a:hover::after {
 
 /* Skill section css start */
 #skills {
+  width: 70%;
+  margin: auto;
   text-align: center;
 }
 #all_skills {
@@ -207,6 +211,8 @@ nav ul li a:hover::after {
 
 /* Tool section start */
 #tools {
+  width: 70%;
+  margin: auto;
   text-align: center;
 }
 #all_tools {
