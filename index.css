@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Luckiest Guy", cursive;
+  font-family: "Arimo", sans-serif;
+  /* font-family: "Luckiest Guy", cursive; */
   box-sizing: border-box;
 }
 html {
