@@ -376,6 +376,11 @@ nav ul li a:hover::after {
 /* Github css end */
 
 /* //======================== */
+@media screen and (min-width: 651px) and (max-width: 780px) {
+  #contact {
+    margin-bottom: 250px;
+  }
+}
 #whatsapplog {
   width: 300px;
 }
