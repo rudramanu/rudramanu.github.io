@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   font-family: "Arimo", sans-serif;
-  /* font-family: "Luckiest Guy", cursive; */
   box-sizing: border-box;
 }
 html {
@@ -16,7 +15,7 @@ body {
 #nav-menu {
   width: 100%;
   height: auto;
-  padding: 30px 10%;
+  padding: 30px;
   position: fixed;
   background-color: teal;
 }
@@ -56,6 +55,20 @@ nav ul li a::after {
 }
 nav ul li a:hover::after {
   width: 100%;
+}
+@media screen and (min-width: 651px) and (max-width: 780px) {
+  nav ul li a {
+    font-size: 15px;
+    margin-right: -10px;
+  }
+  .logo {
+    /* border: 1px solid yellow; */
+    font-size: 25px;
+  }
+  nav ul {
+    margin-bottom: -15px;
+    /* border: 1px solid red; */
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 650px) {
   nav .fas {
