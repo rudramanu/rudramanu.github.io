@@ -399,7 +399,6 @@ nav ul li a:hover::after {
 @media screen and (min-width: 280px) and (max-width: 319px) {
   #contact_inner {
     font-size: large;
-    margin-bottom: 100px;
   }
   .home-img {
     border-radius: 50%;
