@@ -400,10 +400,7 @@ nav ul li a:hover::after {
   #contact_inner {
     font-size: large;
   }
-  .home-img {
-    border-radius: 50%;
-    /* border: 1px solid red; */
-  }
+
   #whatsapplog {
     width: 200px;
   }
