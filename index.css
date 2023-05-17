@@ -404,4 +404,7 @@ nav ul li a:hover::after {
     border-radius: 50%;
     /* border: 1px solid red; */
   }
+  #whatsapplog {
+    width: 200px;
+  }
 }
