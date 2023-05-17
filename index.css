@@ -70,7 +70,7 @@ nav ul li a:hover::after {
     /* border: 1px solid red; */
   }
 }
-@media screen and (min-width: 320px) and (max-width: 650px) {
+@media screen and (min-width: 280px) and (max-width: 650px) {
   nav .fas {
     display: block;
     font-size: 22px;
@@ -138,10 +138,10 @@ nav ul li a:hover::after {
   border-radius: 30%;
   /* padding-bottom: 30px; */
   /* border: 1px solid red; */
-  width: 300px;
+  width: 100%;
 }
 /* media query */
-@media screen and (min-width: 320px) and (max-width: 650px) {
+@media screen and (min-width: 280px) and (max-width: 650px) {
   #home {
     display: flex;
     flex-direction: column;
@@ -207,7 +207,7 @@ nav ul li a:hover::after {
 .skills-card-name {
   font-size: 22px;
 }
-@media screen and (min-width: 320px) and (max-width: 650px) {
+@media screen and (min-width: 280px) and (max-width: 650px) {
   #all_skills {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -241,7 +241,7 @@ nav ul li a:hover::after {
 .skills-card-name {
   font-size: 22px;
 }
-@media screen and (min-width: 320px) and (max-width: 650px) {
+@media screen and (min-width: 280px) and (max-width: 650px) {
   #all_tools {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -298,7 +298,7 @@ nav ul li a:hover::after {
   margin-bottom: 10px;
   font-size: 22px;
 }
-@media screen and (min-width: 320px) and (max-width: 650px) {
+@media screen and (min-width: 280px) and (max-width: 650px) {
   #main_project {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -336,7 +336,7 @@ nav ul li a:hover::after {
 #contact_inner i {
   font-size: 40px;
 }
-@media screen and (min-width: 320px) and (max-width: 650px) {
+@media screen and (min-width: 280px) and (max-width: 650px) {
   #contact_inner {
     display: flex;
     flex-direction: column;
@@ -361,7 +361,7 @@ nav ul li a:hover::after {
   justify-content: space-around;
   margin: auto;
 }
-@media screen and (min-width: 320px) and (max-width: 650px) {
+@media screen and (min-width: 280px) and (max-width: 650px) {
   #All_github_details {
     display: flex;
     flex-direction: column;
@@ -381,10 +381,10 @@ nav ul li a:hover::after {
 /* //======================== */
 @media screen and (min-width: 651px) and (max-width: 780px) {
   #contact {
-    margin-bottom: 250px;
+    margin-bottom: 280px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 500px) {
+@media screen and (min-width: 280px) and (max-width: 500px) {
   #contact_inner {
     font-size: x-large;
     margin-bottom: 100px;
@@ -395,4 +395,14 @@ nav ul li a:hover::after {
 }
 #whatsapplog {
   width: 300px;
+}
+@media screen and (min-width: 280px) and (max-width: 319px) {
+  #contact_inner {
+    font-size: large;
+    margin-bottom: 100px;
+  }
+  .home-img {
+    border-radius: 50%;
+    /* border: 1px solid red; */
+  }
 }
