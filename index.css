@@ -381,10 +381,13 @@ nav ul li a:hover::after {
     margin-bottom: 250px;
   }
 }
-@media screen and (min-width: 320px) and (max-width: 400px) {
+@media screen and (min-width: 320px) and (max-width: 500px) {
   #contact_inner {
     font-size: x-large;
     margin-bottom: 100px;
+  }
+  #skills {
+    margin-top: -150px;
   }
 }
 #whatsapplog {
