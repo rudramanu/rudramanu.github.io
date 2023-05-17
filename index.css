@@ -366,6 +366,9 @@ nav ul li a:hover::after {
     display: flex;
     flex-direction: column;
   }
+  #All_github_details img {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 651px) and (max-width: 1024px) {
   #All_github_details {
